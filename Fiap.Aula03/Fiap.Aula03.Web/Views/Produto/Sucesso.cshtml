@@ -1,0 +1,16 @@
+﻿@*Recebe o objeto produto da controller*@
+@model Produto
+
+<h2>@ViewData["desc"]</h2>
+
+<h3>
+    Produtos
+</h3>
+
+@*<h4>Descrição: @ViewBag.prod.Descricao</h4>
+
+<h4>Valor: R$ @ViewBag.prod.Valor</h4>*@
+
+<h4>Descrição: @Model.Descricao</h4>
+
+<h4>Valor: R$ @Model.Valor </h4>

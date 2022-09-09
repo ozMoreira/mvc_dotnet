@@ -1,0 +1,31 @@
+﻿@{
+	ViewData["Title"] = "Index";
+}
+<form method="post" action="/calculadora/index">
+	<div class="mb-3">
+		<label class="form-label">Valor 1:</label>
+		<input type="text" name="valor1" class="form-control" />
+	</div>
+	<div class="mb-3">
+		<label class="form-label">Valor 2:</label>
+		<input type="text" name="valor2" class="form-control" />
+	</div>
+
+	<div class="mb-3">
+		<label class="form-label">Operação:</label>
+		<select class="form-select" aria-label="Default select example" name="operacao">
+			<option selected>Selecione a Operação</option>
+			<option name="+">+</option>
+			<option name="-">-</option>
+			<option name="*">*</option>
+			<option name="/">/</option>
+		</select>
+	</div>
+
+	<input type="submit" value="Calcular" class="btn btn-primary" />
+	<div class="mb-3">
+
+@*		<h3>Resultado: @ViewBag.Resultado</h3>*@
+		<h3>Resultado: @TempData["resultado"]</h3>
+	</div>
+</form>

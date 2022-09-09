@@ -1,0 +1,54 @@
+﻿@{
+	ViewData["Title"] = "Cadastro";
+}
+
+@model Carro;
+
+@if (TempData["msg"] != null)
+{
+	<div class="alert alert-success">
+		<h3>
+			@TempData["msg"]
+		</h3>
+	</div>
+}
+
+
+<hr />
+<div class="text-center">
+	<h1>Cadastro de Carro</h1>
+	<form asp-action="cadastrar" class="text-start">
+		<div class="row">
+			<div class="col">
+				<label>Modelo do Veiculo</label>
+				<input asp-for="Modelo" class="form-control" placeholder="Modelo" />
+			</div>
+			<div class="col">
+
+				<label>Ano de Fabricação</label>
+				<input asp-for="Ano" placeholder="Ano" class="form-control" size="50" />
+
+			</div>
+			<div class="col">
+
+				<label>Tipo de Veiculo</label>
+				<input asp-for="Tipo" placeholder="Tipo" class="form-control" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<label>Valor</label>
+				<input asp-for="Valor" type="number" placeholder="R$0,00" class="form-control" />
+			</div>
+			<div class="col">
+				<input asp-for="TetoSolar" />
+			<label>Possui teto solar?</label>
+			</div>
+		</div>
+		
+		<input type="submit" value="Cadastrar" class="btn btn-primary" />
+	</form>
+</div>
+<hr />
+
+

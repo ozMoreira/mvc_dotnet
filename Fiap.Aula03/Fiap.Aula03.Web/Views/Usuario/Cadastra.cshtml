@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastra";
+}
+
+<h1>Cadastro de Usuarios</h1>
+<div id="msgSucesso"></div>
+<form method="post" action="/usuario/cadastra"> 
+    <div class="row">
+        <div class="col">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" name="nome" placeholder="Nome Completo"/>
+            </div>
+            <div class="col">
+                <label class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" name="dtAniversario" placeholder="Data de Nascimento (dd/mm/aaaa)" />
+            </div>
+    </div>
+   
+    <div class="mb-3">
+        <label class="form-label">E-mail"</label>
+        <input type="email" class="form-control" name="email" placeholder="email@email.com"/>
+    </div>
+
+    <input type="submit" value="ENVIAR" class="btn btn-primary"/>
+</form>
+

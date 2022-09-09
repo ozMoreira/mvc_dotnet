@@ -1,0 +1,15 @@
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\bin\Debug\net6.0\Fiap.Aula02.UI.exe
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\bin\Debug\net6.0\Fiap.Aula02.UI.deps.json
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\bin\Debug\net6.0\Fiap.Aula02.UI.runtimeconfig.json
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\bin\Debug\net6.0\Fiap.Aula02.UI.dll
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\bin\Debug\net6.0\Fiap.Aula02.UI.pdb
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.csproj.AssemblyReference.cache
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.AssemblyInfoInputs.cache
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.AssemblyInfo.cs
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.csproj.CoreCompileInputs.cache
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.dll
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\refint\Fiap.Aula02.UI.dll
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.pdb
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\Fiap.Aula02.UI.genruntimeconfig.cache
+C:\Workspace\2TDSS\Fiap.Aula02\Fiap.Aula02.UI\obj\Debug\net6.0\ref\Fiap.Aula02.UI.dll

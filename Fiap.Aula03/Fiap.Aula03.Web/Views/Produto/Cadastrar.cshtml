@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+
+<h1>Cadastrar</h1>
+
+<!-- Descrição, Valor e botão -->
+
+<form method="post" action="/produto/cadastrar">
+    <div class="mb-3">
+        <label class="form-label">Descrição</label>
+        <input type="text" name="descricao" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Valor</label>
+        <input type="text" name="valor" class="form-control"/>
+    </div>
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+</form>
