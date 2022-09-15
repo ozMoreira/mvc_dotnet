@@ -17,6 +17,7 @@
 	<form asp-action="editar" class="text-start">
 		<div class="row">
 			<div class="col">
+				<input asp-for="IdCarro"/>
 				<label asp-for="Marca"></label>
 				<select asp-for="Marca"
 				asp-items="@ViewBag.marcas" class="form-select" on">

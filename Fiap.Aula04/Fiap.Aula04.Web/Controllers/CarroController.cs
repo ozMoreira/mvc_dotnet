@@ -42,51 +42,27 @@ namespace Fiap.Aula04.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Editar(Carro carro,int id)
+        public IActionResult Editar(Carro carro)
         {
             //Recuperar a posicao do carro na lista
-            var index = _lista.FindIndex(c => c.IdCarro == id);
+            var index = _lista.FindIndex(c => c.IdCarro == carro.IdCarro);
             //recuperar o carro atraves do id;
-            var c = _lista[index];
-            c.Marca = carro.Marca;
-            c.Modelo = carro.Modelo;
-            c.Tipo = carro.Tipo;
-            c.TetoSolar = carro.TetoSolar;
-            c.Ano = carro.Ano;
-            c.Combustivel = carro.Combustivel;
-            c.Valor = carro.Valor;
+            _lista[index] = carro;
+            
             
             TempData["msg"] = "Carro Editado!";
             //enviar o carro pra view
             return RedirectToAction("Editar");
         }
 
-        [HttpGet]
-        public IActionResult Remove(int id)
-        {
-            CarregaMarcas();
-            //Recuperar a posicao do carro na lista
-            var index = _lista.FindIndex(c => c.IdCarro == id);
-            //recuperar o carro atraves do id;
-            var carro = _lista[index];
-            //enviar o carro pra view
-            return View(carro);
-        }
-
         [HttpPost]
-        public IActionResult Remove(Carro carro, int id)
+        public IActionResult Remover(int id)
         {
-            //Recuperar a posicao do carro na lista
-            var index = _lista.FindIndex(c => c.IdCarro == id);
-            //recuperar o carro atraves do id;
-            var c = _lista[index];
-            _lista.Remove(c);
-
+            //busca o carro na lista atraves de seu id, pra pegar o index.
+            _lista.RemoveAt(_lista.FindIndex(c => c.IdCarro == id));
             TempData["msg"] = "Carro Excluido!";
-            //enviar o carro pra view
-            return RedirectToAction("Editar");
+            return RedirectToAction("Index");
         }
-
 
         [HttpPost]
         public IActionResult Cadastrar(Carro carro)

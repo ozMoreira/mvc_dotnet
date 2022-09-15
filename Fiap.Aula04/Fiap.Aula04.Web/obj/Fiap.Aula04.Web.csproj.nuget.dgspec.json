@@ -1,31 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mvc_dotnet\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj": {}
+    "C:\\Workspace\\FIAP\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj": {}
   },
   "projects": {
-    "D:\\mvc_dotnet\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj": {
+    "C:\\Workspace\\FIAP\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mvc_dotnet\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj",
+        "projectUniqueName": "C:\\Workspace\\FIAP\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj",
         "projectName": "Fiap.Aula04.Web",
-        "projectPath": "D:\\mvc_dotnet\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj",
-        "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-        "outputPath": "D:\\mvc_dotnet\\Fiap.Aula04\\Fiap.Aula04.Web\\obj\\",
+        "projectPath": "C:\\Workspace\\FIAP\\Fiap.Aula04\\Fiap.Aula04.Web\\Fiap.Aula04.Web.csproj",
+        "packagesPath": "C:\\Users\\ozmor\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\FIAP\\Fiap.Aula04\\Fiap.Aula04.Web\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ozmor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -60,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

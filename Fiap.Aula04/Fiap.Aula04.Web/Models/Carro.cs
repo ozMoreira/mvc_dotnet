@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fiap.Aula04.Web.Models
 {
     public class Carro
     {
+        [HiddenInput]
         public int IdCarro { get; set; }
         public String? Modelo { get; set; }
         public int Ano { get; set; }
