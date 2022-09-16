@@ -47,9 +47,7 @@ namespace Fiap.Aula04.Web.Controllers
             //Recuperar a posicao do carro na lista
             var index = _lista.FindIndex(c => c.IdCarro == carro.IdCarro);
             //recuperar o carro atraves do id;
-            _lista[index] = carro;
-            
-            
+            _lista[index] = carro;            
             TempData["msg"] = "Carro Editado!";
             //enviar o carro pra view
             return RedirectToAction("Editar");
