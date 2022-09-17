@@ -4,15 +4,7 @@
 
 @model Carro;
 
-@if (TempData["msg"] != null)
-{
-	<div class="alert alert-success">
-		<h3>
-			@TempData["msg"]
-		</h3>
-	</div>
-}
-
+<mensagem msg="@TempData["msg"]"></mensagem>
 
 <hr />
 <div class="text-center">

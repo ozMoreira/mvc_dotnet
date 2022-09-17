@@ -6,10 +6,12 @@ namespace Fiap.Aula04.Web.TagHelpers
     {
         public String? Msg { get; set; }
 
+        public String? Class { get; set; } = "alert alert-success";
+
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "div";
-            if (Msg != "") output.Attributes.SetAttribute("class", "alert alert-success");
+            if (!string.IsNullOrEmpty(Msg)) output.Attributes.SetAttribute("class", Class);
             output.Content.SetContent(Msg);
         }
     }
