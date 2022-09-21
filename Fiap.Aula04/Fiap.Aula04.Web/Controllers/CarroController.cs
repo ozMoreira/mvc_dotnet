@@ -23,6 +23,16 @@ namespace Fiap.Aula04.Web.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Cadastrar(Carro carro)
+        {
+            carro.IdCarro = ++_id;
+            _lista.Add(carro);
+            TempData["msg"] = "Carro Cadastrado!";
+            //redireciona para o get de cadastrar, zerando os campos
+            return RedirectToAction("Cadastrar");
+        }
+
         private void CarregaMarcas()
         {
             var lista = new List<String>(new String[] { "Fiat", "Volkswagen", "Ford", "Chevrolet" });
@@ -62,15 +72,7 @@ namespace Fiap.Aula04.Web.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpPost]
-        public IActionResult Cadastrar(Carro carro)
-        {
-            carro.IdCarro = ++_id;
-            _lista.Add(carro); 
-            TempData["msg"] = "Carro Cadastrado!";
-            //redireciona para o get de cadastrar, zerando os campos
-            return RedirectToAction("Cadastrar");
-        }
+
 
 
     }

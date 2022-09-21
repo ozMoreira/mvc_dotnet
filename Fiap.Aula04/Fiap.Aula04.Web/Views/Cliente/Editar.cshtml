@@ -1,0 +1,48 @@
+﻿@{
+	ViewData["Title"] = "Cadastro de Cliente";
+}
+
+@model Cliente;
+
+<mensagem msg="@TempData["msg"]"></mensagem>
+<hr />
+<div class="text-center">
+	<h1>Cadastro de Cliente</h1>
+	<form asp-action="cadastrar" class="text-start">
+		<div class="row">
+			<div class="col">
+				<label asp-for="NomeCompleto"></label>
+				<input asp-for="NomeCompleto" class="form-control" placeholder="Nome completo" />
+			</div>
+			<div class="col">
+				<label asp-for="DataNascimento"></label>
+				<input asp-for="DataNascimento" class="form-control" type="date" />
+			</div>
+		</div>
+		<br />
+		<div class="row">
+			<div class="col">
+				<label asp-for="Genero"></label>
+				<select asp-for="Genero"
+						asp-items="@Html.GetEnumSelectList<Genero>()" class="form-control">
+					<option>Selecione</option>
+				</select>
+			</div>
+			<div class="col">
+				<label asp-for="Formacao"></label>
+				<select asp-for="Formacao"
+						asp-items="@ViewBag.formacoes" class="form-select">
+					<option>Selecione</option>
+				</select>
+			</div>
+			<div class="col">
+				<br />
+				<input asp-for="Fidelizado" />
+				<label asp-for="Fidelizado"> </label>
+			</div>
+		</div>
+		<br />
+		<botao texto="Salvar"></botao>
+		<a asp-action="Index" class="btn btn-primary">Cancelar</a>
+	</form>
+</div>
