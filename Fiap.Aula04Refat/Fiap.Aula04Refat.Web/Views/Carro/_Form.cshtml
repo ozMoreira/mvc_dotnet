@@ -1,0 +1,45 @@
+﻿@model Carro;
+<input asp-for="IdCarro"/>
+<div class="row">
+    <div class="col">
+        <label asp-for="Marca"></label>
+        <select asp-for="Marca"
+                asp-items="@ViewBag.marcas" class="form-select">
+            <option>Selecione</option>
+        </select>
+    </div>
+    <div class="col">
+        <label asp-for="Modelo"></label>
+        <input asp-for="Modelo" class="form-control" placeholder="Modelo" />
+    </div>
+    <div class="col">
+
+        <label>Ano de Fabricação</label>
+        <input asp-for="Ano" placeholder="Ano" class="form-control" size="50" />
+
+    </div>
+    <div class="col">
+
+        <label>Tipo de Veiculo</label>
+        <input asp-for="Tipo" placeholder="Tipo" class="form-control" />
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col">
+        <label>Valor</label>
+        <input asp-for="Valor" type="number" placeholder="R$0,00" class="form-control" />
+    </div>
+    <div class="col">
+        <label asp-for="Combustivel"></label>
+        <select asp-for="Combustivel"
+                asp-items="@Html.GetEnumSelectList<Combustivel>()" class="form-select">
+            <option>Selecione</option>
+        </select>
+    </div>
+    <div class="col">
+        <br />
+        <input asp-for="TetoSolar" />
+        <label>Possui teto solar?</label>
+    </div>
+</div>

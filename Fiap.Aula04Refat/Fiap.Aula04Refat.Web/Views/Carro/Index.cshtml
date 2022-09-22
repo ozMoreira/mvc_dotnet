@@ -1,0 +1,83 @@
+﻿@{
+	ViewData["Title"] = "Carros";
+}
+
+@model List<Carro>
+
+@section Banner {
+    <div class="alert alert-info text-center">
+        Quer comprar carros novos com preço de usado? Clique Aqui!
+    </div>
+}
+<mensagem msg="@TempData["msg"]" class = "alert alert-danger"></mensagem>
+
+<h1>Carros Cadastrados</h1>
+<br />
+<a asp-action="Cadastrar" class="btn btn-warning">Cadastro de Veiculos</a>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Teto Solar</th>
+            <th scope="col">Combustível</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            //foreach (Carro carro in TempData["lista"] as List<Carro>)
+            foreach (Carro carro in Model)
+            {
+                <tr>
+                    <th scope="row">@carro.IdCarro</th>
+                    <td>@carro.Marca</td>
+                    <td>@carro.Modelo</td>
+                    <td>@carro.Ano</td>
+                    <td>@carro.Valor</td>
+                    <td>@carro.Tipo</td>
+                    <td>@carro.TetoSolar</td>
+                    <td>@carro.Combustivel</td>
+                    <td>
+                        <a asp-action="editar" asp-route-id="@carro.IdCarro" class=" btn btn-outline-secondary">Editar</a>
+                    </td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button onClick="carroId.value = @carro.IdCarro" type="button"  class=" btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Remover
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Deseja realmente remover o veiculo?
+            </div>
+            <div class="modal-footer">
+            <form asp-action="remover">
+                <input name="id" type="hidden" id="carroId" />
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                <button type="submit" class="btn btn-danger">Sim</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>\
+

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+
+@model Carro;
+
+<mensagem msg="@TempData["msg"]"></mensagem>
+
+<hr />
+<div class="text-center">
+    <h1>Cadastro de Carro</h1>
+    <form asp-action="cadastrar" class="text-start">
+        <!--Add partial view que é comum aos projetos-->
+        <partial name="_Form" />
+        <br />
+        <botao></botao>
+        <a asp-action="Index" class="btn btn-primary">Lista de Veiculos</a>
+    </form>
+</div>
+<hr />
+
+
