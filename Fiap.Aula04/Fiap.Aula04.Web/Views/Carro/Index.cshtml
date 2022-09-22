@@ -1,5 +1,14 @@
-﻿@model List<Carro>
+﻿@{
+	ViewData["Title"] = "Carros";
+}
 
+@model List<Carro>
+
+@section Banner {
+    <div class="alert alert-info text-center">
+        Quer comprar carros novos com preço de usado? Clique Aqui!
+    </div>
+}
 <mensagem msg="@TempData["msg"]" class = "alert alert-danger"></mensagem>
 
 <h1>Carros Cadastrados</h1>
